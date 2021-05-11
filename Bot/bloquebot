@@ -1,0 +1,13 @@
+VERSION BUILD=10101485
+'crea un bloque tipo HTML
+TAG POS=1 TYPE=H2 ATTR=TXT:Agregar<SP>un<SP>bloque
+TAG POS=1 TYPE=SELECT FORM=ACTION:* ATTR=NAME:bui_addblock CONTENT=%html
+'abre el bloque HTML creado
+TAG POS=9 TYPE=IMG ATTR=SRC:*/t/edit_menu
+TAG POS=1 TYPE=SPAN ATTR=TXT:Configurar<SP>bloque<SP>(nuevo<SP>bloque<SP>HTML)
+'ubicar texto del título
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:* ATTR=NAME:config_title CONTENT=GUÍA<SP>DE<SP>INICIO<SP>DE<SP>RECONOCIMIENTO<SP>FACIAL
+'ubicar texto del contenido
+TAG POS=1 TYPE=TEXTAREA FORM=ACTION:* ATTR=NAME:config_text[text] CONTENT=<p><a<SP>href="https://datateca.unad.edu.co/contenidos/publicaciones/Comunicaciones_VIMEP/2020/cursos/Instructivo_Registro_Fotografico_Reconocimiento_Facial.pdf"<SP>onclick="window.open('https://datateca.unad.edu.co/contenidos/publicaciones/Comunicaciones_VIMEP/2020/cursos/Instructivo_Registro_Fotografico_Reconocimiento_Facial.pdf','Instructivo<SP>de<SP>registro<SP>facial','width=1000,height=700,left='+(screen.availWidth/2-500)+',top='+(screen.availHeight/2-350)+'');return<SP>false;"><SP>Para<SP>registrarse<SP></a></p><BR><p><a<SP>href="https://datateca.unad.edu.co/contenidos/publicaciones/Comunicaciones_VIMEP/2020/cursos/Instructivo_Pasos_Previos_Presentacion_Prueba_Con_Reconocimiento_Facial.pdf"<SP>onclick="window.open('https://datateca.unad.edu.co/contenidos/publicaciones/Comunicaciones_VIMEP/2020/cursos/Instructivo_Pasos_Previos_Presentacion_Prueba_Con_Reconocimiento_Facial.pdf','Instructivo<SP>para<SP>realizar<SP>la<SP>prueba','width=1000,height=700,left='+(screen.availWidth/2-500)+',top='+(screen.availHeight/2-350)+'');return<SP>false;"><SP>Para<SP>hacer<SP>la<SP>prueba<SP></a></p><BR><script<SP>src="https://asisbot.unad.edu.co/assets/modules/channel-web/inject.js"<SP>type="text/javascript"></script><BR><script<SP>src="https://datateca.unad.edu.co/contenidos/publicaciones/Comunicaciones_VIMEP/2020/tools/chatbot/unadito_chatbot.js"<SP>type="text/javascript"></script>
+'Presiona el botón guardar
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:* ATTR=NAME:submitbutton
