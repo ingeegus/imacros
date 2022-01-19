@@ -15,5 +15,5 @@ Hecho esto la macro ubicará el mensaje y asignará los roles correspondientes.
 
 ##Textos del mensaje
 
-[Para periodos ordinarios]https://drive.google.com/file/d/10cqaJhAQq08o7HStNUKIGJXshwB_hJCm/view?usp=sharing
-[para periodos alternos]https://drive.google.com/open?id=10gNTGS3tSuB5WlYG2decl4ybEFJ8OXsO&authuser=gustavo.rodriguez%40unad.edu.co&usp=drive_fs
+[Para periodos ordinarios](https://drive.google.com/file/d/10cqaJhAQq08o7HStNUKIGJXshwB_hJCm/view?usp=sharing)
+[para periodos alternos](https://drive.google.com/open?id=10gNTGS3tSuB5WlYG2decl4ybEFJ8OXsO&authuser=gustavo.rodriguez%40unad.edu.co&usp=drive_fs)
