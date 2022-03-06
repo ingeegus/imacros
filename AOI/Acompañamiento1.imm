@@ -1,0 +1,33 @@
+VERSION BUILD=10101485
+' Ingresa Cédula de CC
+'PROMPT "CC estudiante" !VAR1
+'TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:bdoc CONTENT={{!VAR1}}
+'WAIT SECONDS=2
+' Realiza un nuevo registro
+TAG POS=1 TYPE=A ATTR=TXT:Nuevo
+TAG POS=1 TYPE=DIV ATTR=TXT:function<SP>limpiapagina(){<SP>expandesector(98);<SP>window.*
+TAG POS=1 TYPE=DIV ATTR=TXT:Acompañamiento
+WAIT SECONDS=5
+' Guarda los datos e inicia las opcione preestablecidas
+TAG POS=1 TYPE=INPUT:BUTTON FORM=NAME:frmedita ATTR=NAME:cmdGuardar
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara01idcursocatedra CONTENT=%80017
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23catedra_avance CONTENT=%6
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23catedra_acciones CONTENT=%4
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23catedra_resultados CONTENT=%5
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23aler_sociodem CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23aler_psico CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23aler_academ CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23aler_econom CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23aler_externo CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23aler_interno CONTENT=No<SP>aplica
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23contacto_efectivo CONTENT=%1
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23contacto_forma CONTENT=%11
+' Pregunta por observaciones
+PROMPT "Observaciones" !VAR2
+TAG POS=1 TYPE=TEXTAREA FORM=NAME:frmedita ATTR=NAME:cara23contacto_observa CONTENT={{!VAR2}}
+WAIT SECONDS=2
+' Aplaza, Se retira, Factor principal de deserción
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23aplaza CONTENT=%0
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara23seretira CONTENT=%0
+TAG POS=1 TYPE=SELECT FORM=NAME:frmedita ATTR=NAME:cara01factorprincipaldesc CONTENT=%11
+TAG POS=1 TYPE=INPUT:BUTTON FORM=NAME:frmedita ATTR=NAME:cmdGuardar
