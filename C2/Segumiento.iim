@@ -1,0 +1,30 @@
+VERSION BUILD=10101485
+' Realiza un nuevo registro
+TAG POS=1 TYPE=A ATTR=TXT:Nuevo
+TAG POS=1 TYPE=DIV ATTR=TXT:function<SP>limpiapagina(){<SP>expandesector(98);<SP>window.*
+TAG POS=1 TYPE=DIV ATTR=TXT:Acompañamiento
+WAIT SECONDS=5
+' Guarda los datos e inicia las opcione preestablecidas
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:frmedita ATTR=ID:cmdGuardar
+WAIT SECONDS=4
+TAG POS=1 TYPE=SELECT FORM=ID:* ATTR=ID:cara01idcursocatedra CONTENT=%80017
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23catedra_avance CONTENT=%6
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23catedra_acciones CONTENT=%4
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23catedra_resultados CONTENT=%5
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23aler_sociodem CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23aler_psico CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23aler_academ CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23aler_econom CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23aler_externo CONTENT=No<SP>aplica
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23aler_interno CONTENT=No<SP>aplica
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23contacto_efectivo CONTENT=%1
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23contacto_forma CONTENT=%11
+PROMPT "Observaciones" !VAR2
+TAG POS=1 TYPE=TEXTAREA FORM=ID:frmedita ATTR=ID:cara23contacto_observa CONTENT={{!VAR2}}
+WAIT SECONDS=2
+' Aplaza, Se retira, Factor principal de deserción
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23aplaza CONTENT=%0
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara23seretira CONTENT=%0
+TAG POS=1 TYPE=SELECT FORM=ID:frmedita ATTR=ID:cara01factorprincipaldesc CONTENT=%11
+'Guardar
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:frmedita ATTR=ID:cmdGuardar
